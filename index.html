@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps DICODING</title>
+    <link rel="icon" href="assets/img/ikon.ico">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <h2 class="top-header-title">BAD | Bookshelf Apps DICODING</h2>
+    </header>
+    <main>
+        <section class="input-data">
+            <h3>Inputkan Data Buku</h3>
+            <form action="inputData">
+                <div class="input">
+                    <label for="input_Judul">Judul Buku :</label>
+                    <input type="text" id="input_Judul" required>
+                </div>
+                <div class="input">
+                    <label for="input_Tahun">Tahun Terbit Buku :</label>
+                    <input type="number" id="input_Tahun" required>
+                </div>
+                <div class="input">
+                    <label for="input_Penerbit">Penerbit Buku :</label>
+                    <input type="text" id="input_Penerbit">
+                </div>
+                <div class="input">
+                    <label for="input_Target">Target Buku :</label>
+                    <input type="date" id="input_Target" required>
+                </div>
+                <div class="input">
+                    <label for="input_Waktu">Waktu Isi :</label>
+                    <input type="time" id="input_Waktu" required>
+                </div>
+                <div class="input-line">
+                    <label for="input_Selesai" id="input_SelesaiLabel">Selesai Baca</label>
+                    <input type="checkbox" id="input_Selesai">
+                </div>
+                <button id="submit">Masukkan Buku Ke List <span id="jenisBuku"><strong>Belum Baca</strong></span></button>
+                <button id="edit">Masukkan Edit Buku Ke List <span id="editJenisBuku"><strong>Belum Baca</strong></span></button>
+            </form>
+        </section>
+
+        <section class="rak">
+            <h3>Belum Baca</h3>
+            <div id="daftarBelum" class="daftarBuku"></div>
+        </section>
+        <section class="rak">
+            <h3>Selesai Baca</h3>
+            <div id="daftarBaca" class="daftarBuku"></div>
+        </section>
+    </main>
+</body>
+
+<script src="assets/dom.js"></script>
+<script src="assets/script.js"></script>
+<script src="assets/webStorage.js"></script>
+</html>
