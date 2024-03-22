@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps DICODING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Bookshelf Apps Dicoding</h2>
+    <form id="add-book-form">
+        <label for="book-title">Judul Buku:</label>
+        <input type="text" id="book-title" name="title">
+        <label for="book-author">Penulis:</label>
+        <input type="text" id="book-author" name="author">
+        <label for="book-year">Tahun:</label>
+        <input type="number" id="book-year" name="year">
+        <label for="book-status">Sudah Baca?</label>
+        <select id="book-status" name="status">
+            <option value="belum_baca">Belum Baca</option>
+            <option value="sudah_baca">Sudah Baca</option>
+        </select>
+        <button type="submit">Tambahkan Buku</button>
+    </form>
+
+    <h1>Daftar Buku</h1>
+    <section id="belum-baca">
+        <h2>Belum Baca</h2>
+        <ul id="bookshelf-belum-baca"></ul>
+    </section>
+    <section id="sudah-baca">
+        <h2>Sudah Baca</h2>
+        <ul id="bookshelf-sudah-baca"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

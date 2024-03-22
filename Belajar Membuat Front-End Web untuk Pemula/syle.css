@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+}
+
+h {
+    text-align: center;
+    color: #000000;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#belum-baca {
+    border-color: #ff6666;
+}
+
+#sudah-baca {
+    border-color: #66ff66;
+}
+
+#bookshelf-belum-baca li,
+#bookshelf-sudah-baca li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+#add-book-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#add-book-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#add-book-form input,
+#add-book-form select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#add-book-form button {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+}
